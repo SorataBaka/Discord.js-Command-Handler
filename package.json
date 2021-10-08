@@ -4,7 +4,7 @@
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
   },
-  "name": "discord.js-command-handler",
+  "name": "@soratabaka/djs-handler",
   "version": "1.0.0",
   "description": "A small and simple Discord.js Typescript Command Handler",
   "main": "index.js",
@@ -16,7 +16,6 @@
     ".": {
       "require": "./src/index.js"
     }
-
   },
   "keywords": [
     "discord",
@@ -27,5 +26,14 @@
     "javascript"
   ],
   "author": "Christian Harjuno (SorataBaka)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SorataBaka/Discord.js-Command-Handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SorataBaka/Discord.js-Command-Handler/issues"
+  },
+  "homepage": "https://github.com/SorataBaka/Discord.js-Command-Handler#readme"
 }
