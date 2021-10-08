@@ -66,9 +66,10 @@ module.exports = class ClientExtension extends discord_js_1.Client {
             const CommandFile = this.Commands.get(CommandName);
             if (!CommandFile)
                 return;
-            var args = message.content.split(" ").splice(0, 2);
+            var args = message.content.split(" ");
+            args.splice(0, 2);
             if (CommandFile.args.toLowerCase() == "single") {
-                args.join(" ");
+                args = args.join(" ");
             }
             else if (CommandFile.args.toLowerCase() == "none" || !CommandFile.args) {
                 args = undefined;
