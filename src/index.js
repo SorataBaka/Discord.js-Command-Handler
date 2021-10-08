@@ -26,7 +26,7 @@ const path = __importStar(require("path"));
  *
  * Creates a base application that creates a new discord client and pre-sets all needed paths
  */
-class Base extends discord_js_1.Client {
+module.exports = class Base extends discord_js_1.Client {
     constructor(clientOption, Parameters) {
         super(clientOption);
         const { Prefix, CommandPath, EventPath, Token } = Parameters;
@@ -78,5 +78,4 @@ class Base extends discord_js_1.Client {
         //Logs in the bot
         this.login(Token);
     }
-}
-module.exports.Base = Base;
+};

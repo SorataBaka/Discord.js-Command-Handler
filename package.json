@@ -5,7 +5,7 @@
     "path": "^0.12.7"
   },
   "name": "@soratabaka/djs-handler",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A small and simple Discord.js Typescript Command Handler",
   "main": "index.js",
   "scripts": {
