@@ -1,5 +1,5 @@
 import { Client, Collection, ClientOptions, Message } from "discord.js"
-import { Parameters, Command, Event, CommandExecuteParameter } from "../types"
+import { Parameters, Command, Event, CommandExecuteParameter } from "../../types"
 import * as fs from "fs"
 import * as path from "path"
 
@@ -7,7 +7,7 @@ import * as path from "path"
  * 
  * Creates a base application that creates a new discord client and pre-sets all needed paths
  */
-module.exports = class Base extends Client {
+module.exports = class ClientExtension extends Client {
     public Prefix:string
     private readonly CommandPath:string
     private readonly EventPath:string

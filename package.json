@@ -8,13 +8,17 @@
   "version": "1.0.2",
   "description": "A small and simple Discord.js Typescript Command Handler",
   "main": "index.js",
+  "module": "./src/index.mjs",
+  "types": "./types.d.ts",
   "scripts": {
-    "publish": "git add --a && git commit --m 'test' && npm publish"
+    "publish:git": "git add --a && git commit --m 'Added support for ES6' && npm publish",
+    "build": "tsc"
   },
   "exports": {
     "./*": "./*",
     ".": {
-      "require": "./src/index.js"
+      "require": "./src/index.js",
+      "import": "./src/index.mjs"
     }
   },
   "keywords": [
