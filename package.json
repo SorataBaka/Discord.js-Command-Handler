@@ -9,7 +9,7 @@
   "description": "A small and simple Discord.js Typescript Command Handler",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "git add --a && git commit --m 'test' && npm publish"
   },
   "exports": {
     "./*": "./*",
