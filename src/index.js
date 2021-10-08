@@ -79,4 +79,4 @@ class Base extends discord_js_1.Client {
         this.login(Token);
     }
 }
-exports.default = Base;
+module.exports.Base = Base;

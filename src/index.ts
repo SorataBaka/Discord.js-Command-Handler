@@ -7,7 +7,7 @@ import * as path from "path"
  * 
  * Creates a base application that creates a new discord client and pre-sets all needed paths
  */
-export default class Base extends Client {
+class Base extends Client {
     public Prefix:string
     private readonly CommandPath:string
     private readonly EventPath:string
@@ -64,3 +64,5 @@ export default class Base extends Client {
         this.login(Token)
     }
 }
+
+module.exports.Base = Base
