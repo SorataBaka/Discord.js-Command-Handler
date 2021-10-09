@@ -42,6 +42,7 @@ export interface ClientExtensionInterface extends Client{
     CommandPath:string;
     Commands:Collection<string, Command>,
     Events:Collection<string, Event>,
+    setDefault:Function;
 }
 
 export interface CommandHandlerInterface {
