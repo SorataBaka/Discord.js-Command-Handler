@@ -1,3 +1,3 @@
 module.exports = {
-    ClientExtension: require("./Handlers/ClientExtension")
+    ClientExtension: require("./Handlers/ClientExtension.js")
 }
